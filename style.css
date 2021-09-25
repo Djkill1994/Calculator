@@ -28,7 +28,7 @@ body {
     display: grid;
     grid-template-columns: 90px 90px 90px 90px;
     grid-template-rows: 90px 90px 90px 90px 90px 90px;
-    grid-gap: 13px;
+    grid-gap: 12px;
 }
 
 .data-input {
@@ -38,25 +38,67 @@ body {
     position: absolute;
     top: 249px;
     left: 35px;
-    font-size: 99px;
+    font-size: 90px;
     color: white;
     display: flex;
     justify-content: flex-end;
+    flex-direction: row;
+    align-items: flex-end;
 }
 
-.number-0 {
+#number-0 {
     grid-column-start: 1;
     grid-column-end: 3;
 }
 
 .grid div {
-    font-size: 20px;
-    padding: .5em;
-    /*background: gold;*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     text-align: center;
     border-radius: 200px;
 }
 
+.number, .arithmetic-operator {
+    font-size: 50px;
+}
+
+.assignment-operator{
+    font-size: 45px;
+}
+
 .grid div:hover {
-    box-shadow: white 1px 1px 16px;
+    /*background-color: ;*/
+    /*color: ;*/
+}
+
+.arithmetic-operator{
+    background-color: rgba(254,159,11,1);
+}
+
+.assignment-operator{
+    background-color: rgba(165,165,165,1) ;
+    color: black;
+    font-size: 30px;
+}
+
+.number{
+    background-color: rgba(51,51,51,1);
+}
+
+.number, .assignment-operator, .arithmetic-operator:hover{
+    cursor: pointer;
+}
+
+.arithmetic-operator:active{
+    background-color: white;
+    color: rgba(254,159,11,1);
+}
+
+.assignment-operator:active{
+    background-color: gray;
+}
+
+.number:active{
+    background-color: silver;
 }
