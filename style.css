@@ -11,6 +11,7 @@ body {
     flex-direction: column;
     margin-top: -200px;
     overflow: hidden;
+    user-select: none;
 }
 
 .calculator-container {
@@ -63,7 +64,7 @@ body {
     font-size: 50px;
 }
 
-.assignment-operator{
+.assignment-operator {
     font-size: 45px;
 }
 
@@ -72,33 +73,33 @@ body {
     /*color: ;*/
 }
 
-.arithmetic-operator{
-    background-color: rgba(254,159,11,1);
+.arithmetic-operator {
+    background-color: rgba(254, 159, 11, 1);
 }
 
-.assignment-operator{
-    background-color: rgba(165,165,165,1) ;
+.assignment-operator {
+    background-color: rgba(165, 165, 165, 1);
     color: black;
     font-size: 30px;
 }
 
-.number{
-    background-color: rgba(51,51,51,1);
+.number {
+    background-color: rgba(51, 51, 51, 1);
 }
 
-.number, .assignment-operator, .arithmetic-operator:hover{
+.number, .assignment-operator, .arithmetic-operator:hover {
     cursor: pointer;
 }
 
-.arithmetic-operator:active{
+.arithmetic-operator:active {
     background-color: white;
-    color: rgba(254,159,11,1);
+    color: rgba(254, 159, 11, 1);
 }
 
-.assignment-operator:active{
+.assignment-operator:active {
     background-color: gray;
 }
 
-.number:active{
+.number:active {
     background-color: silver;
 }
