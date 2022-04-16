@@ -1,4 +1,4 @@
-The project is a clone of the iphone calculator, the full functionality of the original is implemented
+The project is a clone of the iphone calculator 📱🧮, the full functionality of the original is implemented
 
 Screen:
 
